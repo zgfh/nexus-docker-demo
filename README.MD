@@ -1,6 +1,8 @@
 # nexus 仓库测试
 ## 测试方法
-修改 Dockerfile 内的nexus 地址，账户密码信息，执行
+下载本仓库代码 https://github.com/zgfh/nexus-docker-demo/archive/1.0.0.zip
+修改 Dockerfile 中“repository”值为您的的 nexus 仓库地址，“repository_username”,"repository_password"为nexus仓库的账户密码信息(如果没有更改，账户密码默认值是对的)，
+执行下面命令
 ```
 docker build .
 ```

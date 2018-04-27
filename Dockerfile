@@ -3,9 +3,14 @@ FROM daocloud.io/maven:3.2-jdk-8
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 
-ENV registry http://192.168.4.170:30696
-ENV staging_registry ${registry}/content/repositories/staging
-ENV mirror_registry ${registry}/content/repositories/central
+ENV repository http://127.0.0.1:30696
+ENV mirror_repository ${repository}/content/repositories/central
+
+ENV staging_repository ${repository}/content/repositories/staging
+ENV snapshots_repository ${repository}/content/repositories/snapshots
+
+ENV repository_username deployment
+ENV repository_password deployment123
 
 ADD settings.xml ${MAVEN_HOME}/conf/settings.xml
 ADD pom.xml pom.xml

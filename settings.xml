@@ -119,8 +119,13 @@ under the License.
         -->
         <server>
           <id>staging</id>
-          <username>deployment</username>
-          <password>deployment123</password>
+          <username>${repository_username}</username>
+          <password>${repository_password}</password>
+        </server>
+        <server>
+            <id>snapshots</id>
+            <username>${repository_username}</username>
+            <password>${repository_password}</password>
         </server>
 
 
@@ -154,7 +159,7 @@ under the License.
         <mirror>
             <id>internal-repository</id>
             <name>Maven Repository Manager running on repo.mycompany.com</name>
-            <url>${mirror_registry}</url>
+            <url>${mirror_repository}</url>
             <mirrorOf>*</mirrorOf>
         </mirror>
 

@@ -3,7 +3,8 @@ FROM daocloud.io/maven:3.2-jdk-8
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 
-ENV repository http://127.0.0.1:30696
+ENV repository http://192.168.4.170:30696
+ENV version 1.0.0
 ENV mirror_repository ${repository}/content/repositories/central
 
 ENV staging_repository ${repository}/content/repositories/staging

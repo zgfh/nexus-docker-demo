@@ -16,7 +16,7 @@
 
 	<groupId>io.daocloud</groupId>
 	<artifactId>demo</artifactId>
-	<version>0.0.5</version>
+	<version>${version}</version>
 	<packaging>jar</packaging>
 
 	<name>demo</name>
